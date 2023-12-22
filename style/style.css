@@ -11,12 +11,14 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url('background3.jpg');
+    background-repeat: no-repeat;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
 .wrapper{
     position: absolute;
+    z-index: 9999;
     width: 400px;
     height: 440px;
     background: rgba(0,0,0,0.75);
@@ -285,6 +287,45 @@ footer .copy{
     margin-right: 100px;
     text-align: center;
     animation: moveFade ease 3s;
+}
+.contato{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contato .email{
+    color: #8d806f;
+    width: 400px;
+    height: 520px;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0,0,0,0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: moveFade ease 3s;
+}
+.contato .text{
+    color: #fff;
+    margin-right: 100px;
+    text-align: center;
+    animation: moveFade ease 3s;
+    display: flex;
+    flex-direction: column;
+}
+.contato .text .whats{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.contato .text .whats span{
+    color: green;
+    font-size: 1.7rem;
+    margin-right: 5px;
 }
 @keyframes fadeIn {
     0% {
