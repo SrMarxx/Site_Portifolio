@@ -29,21 +29,21 @@ function verifica(senha) {
         if (senha.match(/W+/)) forca++;
     };
     return forca;
-  }
+}
   
-  function mostra_res(senha) {
-    var res = verifica(senha);
-    var cor;
-    var msg;
-    if (res < 2) {
-      cor = "red";
-      msg = "Fraca";
-    } else if (res == 2) {
-      cor = "orange";
-      msg = "Média";
-    } else {
-      cor = "green";
-      msg = "Forte";
-    }
-    document.getElementById("forca").innerHTML = "<span style='color:" + cor + ";'>" + msg + "</span>";
+function mostra_res(senha) {
+  var res = verifica(senha);
+  var cor;
+  var msg;
+  if (res < 2) {
+    cor = "red";
+    msg = "Fraca";
+  } else if (res == 2) {
+    cor = "orange";
+    msg = "Média";
+  } else {
+    cor = "green";
+    msg = "Forte";
   }
+  document.getElementById("forca").innerHTML = "<span style='color:" + cor + ";'>" + msg + "</span>";
+}
